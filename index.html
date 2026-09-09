@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mně - Viola Taran</title>
+
+    <!-- Pro nastavení stylů a barev byla použita umělá inteligence -->
+
+    <style>
+        :root {
+            --bg-color: #f3effa;
+            --card-bg: #ffffff;
+            --text-main: #2d1b4e;
+            --text-muted: #5c4b75;
+            --primary-purple: #7b4397;
+            --accent-purple: #dc2626;
+            --border-color: #e2d7f5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Hlavní karta s obsahem */
+        .container {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(123, 67, 151, 0.12);
+            border: 1px solid var(--border-color);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: var(--primary-purple);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .computer-info {
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        /* Sekce s odpověďmi */
+        .info-group {
+            margin-bottom: 25px;
+        }
+
+        .info-group:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            color: var(--primary-purple);
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #f0e6f7;
+            color: var(--primary-purple);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Viola Taran</h1>
+        <div class="computer-info">
+            <strong>Počítač:</strong> Druhá lavice, počítač u zdi (ne u okna)
+        </div>
+    </header>
+
+    <main>
+        <section class="info-group">
+            <h2>Očekávání od předmětu</h2>
+            <p>Z důvodu mých relativně složitých ale zábavných životních okolností bojím se něco očekávat. </p>
+        </section>
+
+        <section class="info-group">
+            <h2>Maturita z programování</h2>
+            <p><strong>Ne.</strong> Jako volitelný profilový předmět si zvolím elektroniku. </p>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
