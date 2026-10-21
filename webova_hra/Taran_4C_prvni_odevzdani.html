@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeměpisný Kvíz</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3e8ff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        #quiz-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(107, 33, 168, 0.2);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #6b21a8;
+            margin-bottom: 20px;
+        }
+
+        .skryte {
+            display: none !important;
+        }
+
+        button {
+            background-color: #8b5cf6;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #7c3aed;
+        }
+
+        .btn-start {
+            background-color: #6b21a8;
+            font-weight: bold;
+        }
+
+        #moznosti {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .statistika {
+            font-size: 18px;
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #faf5ff;
+            border-radius: 8px;
+            border-left: 5px solid #8b5cf6;
+        }
+
+        .spravne-text { color: #16a34a; font-weight: bold; }
+        .spatne-text { color: #dc2626; font-weight: bold; }
+
+        #ukazatel-pokroku {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <div id="uvod-obrazovka">
+        <h1>Zeměpisný Kvíz</h1>
+        <p>Otestuj své znalosti ze zeměpisu! Každá otázka může mít od 2 do 5 možností.</p>
+        <button class="btn-start" onclick="startHry()">Začít kvíz</button>
+    </div>
+
+    <div id="hra-obrazovka" class="skryte">
+        <div id="ukazatel-pokroku">Otázka 1 z X</div>
+        <h2 id="text-otazky">Zde bude text otázky</h2>
+        <div id="moznosti"></div>
+    </div>
+
+    <div id="vysledek-obrazovka" class="skryte">
+        <h1>Konec kvízu!</h1>
+        <div class="statistika">
+            <p>Tvé skóre: <span id="konecne-skore" class="spravne-text">0</span></p>
+            <p>Správně: <span id="pocet-spravnych" class="spravne-text">0</span></p>
+            <p>Špatně: <span id="pocet-spatnych" class="spatne-text">0</span></p>
+            <p>Úspěšnost: <span id="procenta">0</span>%</p>
+        </div>
+        <button class="btn-start" onclick="restartHry()">Hrát znovu</button>
+    </div>
+</div>
+
+<script>
+    const otazkyData = [];
+    let aktualniIndexOtazky = 0;
+    let pocetSpravnych = 0;
+    let pocetSpatnych = 0;
+
+    function startHry() {
+    }
+
+    function nacteniOtazky() {
+    }
+
+    function vyhodnoceniOdpovedi() {
+    }
+
+    function ukazaniVysledku() {
+    }
+
+    function restartHry() {
+    }
+</script>
+</body>
+</html>
